@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        let bcc = "";
+        bcc = "<table border='1' >";
+        for (let i = 2; i <= 10; i++) {
+            bcc += "<tr>";
+
+            for (let j = 2; j <= 10; j++) {
+                /*if (j % 2 == 0) {
+                    bcc += ` <td style ="background-color:green">${j}*${i}=${i*j}</td> `;
+                } else {
+                    bcc += ` <td style ="background-color:yellow">${j}*${i}=${i*j}</td> `
+                }*/
+
+                bcc += `<td style='background-color:${(j%2==0)?"yellow":"green"};'>${j}*${i}=${i*j}</td>`;
+            }
+            bcc += "</tr>";
+        }
+        bcc += "</table>";
+        document.write(bcc);0
+    </script>
+</body>
+
+</html>
