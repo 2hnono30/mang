@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    nhập từ: <input type="text" id="str">
+    <button type="button" onclick="tran()">Dịch</button>
+    <p id="result"></p>
+    <script>
+        function tran() {
+            let str = document.getElementById("str").value;
+            let array_eng = ["apple", "banana"];
+            let array_vie = ["táo", "chuối"];
+            let result = "";
+            let index_e = 0;
+            for (let i = 0; i < array_eng.length; i++) {
+                if (str == array_eng[i]) {
+                    index_e = i;
+                    for (let j = 0; j < array_vie.length; j++) {
+                        if (index_e == j){
+                        result = array_vie[j];}
+                    }
+                }
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>
