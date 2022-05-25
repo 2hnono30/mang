@@ -32,21 +32,20 @@
             this.setyear = function (year) {
                 this.year = year;
             }
-            this.setdate= function(day,month,year){
-                this.day=day;
-                this.month=month;
-                this.year=year;
+            this.setdate = function (day, month, year) {
+                this.day = day;
+                this.month = month;
+                this.year = year;
                 return this.setdate;
             }
-            this.tostring=function(day,month,year){
-                this.day=day.tostring();
-                this.month=month.tostring();
-                this.year=year.tostring();
-                return this.tostring;
+            this.tostring = function (day, month, year) {
+
+                return `${this.day}/${this.month}/${this.year}`;
             }
-           
+
         };
         let date = new Mydate(2, 2, 2007);
+        console.log(date.tostring());
         // let day = date.getday();
         // let month = date.getmonth();
         // let year = date.getyear();
@@ -55,13 +54,12 @@
         // date.setday(10);
         // date.setmonth(10);
         // date.setyear(2019);
-        let day = date.getday(10);
-        let month = date.getmonth(10);
-        let year = date.getyear(10);
+        // let day = date.getday(10);
+        // let month = date.getmonth(10);
+        // let year = date.getyear(10);
         // console.log(day + "/" + month + "/" + year);
-        console.log(day + "/" + month + "/" + year);
-            
-        
+
+
     </script>
 </body>
 
