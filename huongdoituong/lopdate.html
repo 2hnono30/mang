@@ -39,9 +39,9 @@
                 return this.setdate;
             }
             this.tostring=function(day,month,year){
-                this.day=day;
-                this.month=month;
-                this.year=year;
+                this.day=day.tostring();
+                this.month=month.tostring();
+                this.year=year.tostring();
                 return this.tostring;
             }
            
@@ -59,7 +59,7 @@
         let month = date.getmonth(10);
         let year = date.getyear(10);
         // console.log(day + "/" + month + "/" + year);
-        console.log(`${day}/ ${month}/${year}`);
+        console.log(day + "/" + month + "/" + year);
             
         
     </script>
